@@ -89,7 +89,7 @@
             // ResultsText
             // 
             ResultsText.BackColor = SystemColors.Window;
-            ResultsText.ForeColor = SystemColors.ControlLightLight;
+            ResultsText.ForeColor = SystemColors.ControlText;
             ResultsText.Location = new Point(106, 310);
             ResultsText.Multiline = true;
             ResultsText.Name = "ResultsText";

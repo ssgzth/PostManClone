@@ -1,7 +1,10 @@
+using PostManCloneLibrary;
+
 namespace Postman_Clone;
 
 public partial class Dashboard : Form
 {
+    private readonly ApiAccess api = new();
     public Dashboard()
     {
         InitializeComponent();
@@ -14,7 +17,8 @@ public partial class Dashboard : Form
         try
         {
             SystemStatus.Text = "Calling Api ....";
-            await Task.Delay(2000);
+
+            ResultsText.Text = await api.CallApi(ApiUrl.Text);
             SystemStatus.Text = "Ready";
         }
         catch (Exception ex)

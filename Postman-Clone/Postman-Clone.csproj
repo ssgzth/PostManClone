@@ -10,7 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PostManClone\PostManClone.csproj" />
+    <ProjectReference Include="..\PostManClone\PostManCloneLibrary.csproj" />
   </ItemGroup>
 
 </Project>
