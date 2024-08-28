@@ -8,6 +8,7 @@ public partial class Dashboard : Form
     private readonly ApiAccess api = new();
 
     string statusCode;
+
     public Dashboard()
     {
         InitializeComponent();
@@ -41,4 +42,5 @@ public partial class Dashboard : Form
         }
     }
 
+  
 }

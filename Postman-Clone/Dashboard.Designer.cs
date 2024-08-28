@@ -49,7 +49,7 @@ namespace Postman_Clone
             // 
             TitleLabel.AutoSize = true;
             TitleLabel.Font = new Font("Stencil", 26F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            TitleLabel.ForeColor = SystemColors.ControlText;
+            TitleLabel.ForeColor = Color.DarkSlateGray;
             TitleLabel.Location = new Point(106, 48);
             TitleLabel.Name = "TitleLabel";
             TitleLabel.Size = new Size(444, 61);
@@ -60,6 +60,7 @@ namespace Postman_Clone
             // 
             ApiUrlLabel.AutoSize = true;
             ApiUrlLabel.Font = new Font("Stencil", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ApiUrlLabel.ForeColor = Color.DarkSlateGray;
             ApiUrlLabel.Location = new Point(95, 160);
             ApiUrlLabel.Name = "ApiUrlLabel";
             ApiUrlLabel.Size = new Size(176, 43);
@@ -78,19 +79,22 @@ namespace Postman_Clone
             // 
             // ApiUrlBtn
             // 
+            ApiUrlBtn.BackColor = Color.SteelBlue;
             ApiUrlBtn.Font = new Font("Stencil", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ApiUrlBtn.ForeColor = Color.White;
             ApiUrlBtn.Location = new Point(1541, 158);
             ApiUrlBtn.Name = "ApiUrlBtn";
             ApiUrlBtn.Size = new Size(112, 55);
             ApiUrlBtn.TabIndex = 3;
             ApiUrlBtn.Text = "Go";
-            ApiUrlBtn.UseVisualStyleBackColor = true;
+            ApiUrlBtn.UseVisualStyleBackColor = false;
             ApiUrlBtn.Click += ApiUrlBtn_Click;
             // 
             // ResultLabel
             // 
             ResultLabel.AutoSize = true;
             ResultLabel.Font = new Font("Stencil", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ResultLabel.ForeColor = Color.DarkSlateGray;
             ResultLabel.Location = new Point(95, 243);
             ResultLabel.Name = "ResultLabel";
             ResultLabel.Size = new Size(169, 43);
@@ -122,6 +126,7 @@ namespace Postman_Clone
             // SystemStatus
             // 
             SystemStatus.Font = new Font("Stencil", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            SystemStatus.ForeColor = Color.DarkSlateGray;
             SystemStatus.Name = "SystemStatus";
             SystemStatus.Size = new Size(103, 33);
             SystemStatus.Text = "Ready";
@@ -130,6 +135,7 @@ namespace Postman_Clone
             // 
             Status.AutoSize = true;
             Status.Font = new Font("Stencil", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Status.ForeColor = Color.DarkSlateGray;
             Status.Location = new Point(1422, 953);
             Status.Name = "Status";
             Status.Size = new Size(235, 43);
@@ -150,7 +156,7 @@ namespace Postman_Clone
             // 
             AutoScaleDimensions = new SizeF(20F, 48F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.DarkSeaGreen;
+            BackColor = Color.LightGray;
             ClientSize = new Size(1771, 1141);
             Controls.Add(DropDown);
             Controls.Add(Status);
@@ -162,6 +168,7 @@ namespace Postman_Clone
             Controls.Add(ApiUrlLabel);
             Controls.Add(TitleLabel);
             Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            ForeColor = Color.DarkSlateGray;
             Margin = new Padding(6);
             Name = "Dashboard";
             Text = "PostManClone";
